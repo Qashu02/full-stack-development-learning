@@ -1,0 +1,24 @@
+.header{
+font-size: 1rem;
+display:  flex;
+flex-direction: row;
+color: black;
+background-color: rebeccapurple;
+margin: 0;
+}
+
+.heading{
+    padding-top: 1rem;
+    padding-right: 30rem;
+}
+.navigation{
+    display: flex;
+    padding: 1rem 10rem;
+    padding-left: 5rem;
+}
+li{
+    font-size: 1.5rem;
+    list-style-type: none;
+
+   padding: 1rem 2rem;
+}
