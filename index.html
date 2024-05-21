@@ -6,35 +6,24 @@
     <title>Document</title>
   </head>
   <body>
-    <table border="black">
-      <caption>
-        A test table
-      </caption>
-      <thead>
-        <tr>
-          <th rowspan="2">&nbsp;</th>
-          <th colspan="2">average</th>
-          <th rowspan="2">red eyess</th>
-        </tr>
-        <tr>
-          <th>height</th>
-          <th>weight</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>male</td>
-          <td>1.9</td>
-          <td>2.0</td>
-          <td>47kg</td>
-        </tr>
-        <tr>
-          <td>Females</td>
-          <td>30kg</td>
-          <td>46%</td>
-          <td>4</td>
-        </tr>
-      </tbody>
-    </table>
+    <form action="/server">
+      <label for="username ">username</label>
+      <input
+        type="text"
+        id="username"
+        placeholder="Enterusername"
+        name="username"
+      />
+      <div>
+        <label for="password"> Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter password"
+        />
+      </div>
+      <button type="submit">sign</button>
+    </form>
   </body>
 </html>
