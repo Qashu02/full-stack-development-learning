@@ -6,24 +6,36 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="/server">
-      <label for="username ">username</label>
-      <input
-        type="text"
-        id="username"
-        placeholder="Enterusername"
-        name="username"
-      />
+    <form action="\server">
+      Registration form:
       <div>
-        <label for="password"> Password</label>
+        <label for="username ">Username</label>
         <input
-          type="password"
-          name="password"
-          id="password"
-          placeholder="Enter password"
+          type="text"
+          id="username"
+          name="name"
+          placeholder="First name "
         />
       </div>
-      <button type="submit">sign</button>
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="pass"
+          id="password"
+          placeholder="Enter your password"
+        />
+      </div>
+      <label for="gender">Please select your gender</label>
+      <select name="gender" id="gender">
+        <option value="Male" selected>Male</option>
+        <option value="FeMale">FeMale</option>
+      </select>
+      <div>
+        <label for="Conditions">Do you agree for Conditions?</label>
+        <input type="checkbox" id="Conditions" name="cond" /> Yes I,agree
+      </div>
+      <button>Register</button>
     </form>
   </body>
 </html>
