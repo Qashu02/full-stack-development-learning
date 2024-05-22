@@ -6,46 +6,31 @@
     <title>Document</title>
   </head>
   <body>
-    <table border="black">
-      <caption>
-        Student Information
-      </caption>
-
-      <tr>
-        <th rowspan="7">info</th>
-        <th rowspan="2">name</th>
-        <th colspan="2">Address</th>
-      </tr>
-      <tr>
-        <th>city</th>
-        <th>house</th>
-      </tr>
-
-      <tr>
-        <td>A</td>
-        <td>lahore</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>A</td>
-        <td>lahore</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>A</td>
-        <td>lahore</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>A</td>
-        <td>lahore</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>A</td>
-        <td>lahore</td>
-        <td>1</td>
-      </tr>
-    </table>
+    <form action="server">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <div>
+        <label for="sex"> Sex:</label>
+        <label for="sex"> Male </label>
+        <input type="radio" name="sex" id="sex" /> 
+        <label for="sex">Female</label>
+        <input type="radio" name="sex" id="sex" />
+      </div>
+      <div>
+        <label for="country">Select your Country:</label>
+        <select name="country" id="country">
+            <option value=>Select an option</option>
+        </select>
+      </div>
+      <div>
+    <label for="message">Message</label>
+    <div><textarea name="messs" id="message" rows="4" cols="30"></textarea></div>
+      </div>
+      <div>
+        <label for="subscribe">Subscribe?</label>
+        <input type="checkbox" name="sub" id="subscribe">
+      </div>
+      <button>Submit</button>
+    </form>
   </body>
 </html>
