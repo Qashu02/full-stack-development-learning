@@ -1,24 +1,22 @@
-.header{
-font-size: 1rem;
-display:  flex;
-flex-direction: row;
-color: black;
-background-color: rebeccapurple;
-margin: 0;
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-.heading{
-    padding-top: 1rem;
-    padding-right: 30rem;
+h1,h2,h3,h4,h5,h6,p{
+    text-align:center;
 }
-.navigation{
-    display: flex;
-    padding: 1rem 10rem;
-    padding-left: 5rem;
+p{
+    color: #964B00;
+    line-height: 30px;
+    
 }
-li{
-    font-size: 1.5rem;
-    list-style-type: none;
-
-   padding: 1rem 2rem;
+a{
+    color: rgb(0,255,0);
+    text-decoration: none;
+}
+button{
+    background-color: white;
+    color: blueviolet;
+}
+textarea{
+    color: black;
 }

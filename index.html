@@ -2,57 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initialscale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>CCS Assignment-1</title>
   </head>
-  <body>
-    <h2>Feedback Form</h2>
-    <form action="Server">
-      <label for="name">Name:</label>
-      <input type="text" name="name" id="name" placeholder="Write your name " />
-      <br /><br />
-      <div>
-        <label for="email">Email:</label>
-        <input
-          type="email"
-          name="email"
-          id="email "
-          placeholder="Write your Email"
-        />
-      </div>
-      <br />
-      <div>
-        <label for="message">Message:</label>
-        <div>
-          <textarea name="message" id="message" cols="30" rows="4"></textarea>
-        </div>
-      </div>
-      <br />
-
-      <label for="rating">Rate for us out of 5:</label>
-      <br />
-      <input type="radio" id="one" value="1" name="rating" />
-      <label for="one">1</label>
-      <br />
-
-      <input type="radio" id="two" value="2" name="rating" />
-      <label for="two">2</label>
-      <br />
-
-      <input type="radio" id="three" value="3" name="rating" />
-      <label for="three">3</label>
-      <br />
-
-      <input type="radio" id="four" value="4" name="rating" />
-      <label for="four">4</label>
-      <br />
-
-      <input type="radio" id="five" value="5" name="rating" />
-      <label for="five">5</label>
-      <br />
-      <br />
-      <br />
-      <button>Submit</button>
-    </form>
+  <body style="background-color: wheat">
+    <!-- Poem Name -->
+    <h1 style="color: red; text-decoration: underline">Ozymandias</h1>
+    <!-- Poet's Name -->
+    <h3 style="color: black">by Percy Bysshe Shelley</h3>
+    <!-- Poem -->
+    <p>
+      I met a traveller from an antique land,<br />
+      Who said—“Two vast and trunkless legs of stone<br />
+      Stand in the desert. . . . Near them, on the sand,<br />
+      Half sunk a shattered visage lies, whose frown,<br />
+      And wrinkled lip, and sneer of cold command,<br />
+      Tell that its sculptor well those passions read<br />
+      Which yet survive, stamped on these lifeless things,<br />
+      The hand that mocked them, and the heart that fed;<br />
+      And on the pedestal, these words appear:<br />
+      My name is Ozymandias, King of Kings;<br />
+      Look on my Works, ye Mighty, and despair!<br />
+      Nothing beside remains. Round the decay<br />
+      Of that colossal Wreck, boundless and bare<br />
+      The lone and level sands stretch far away.”<br />
+    </p>
+    <hr />
+    <h4>
+      Read up more about the poem on
+      <a href="https://en.wikipedia.org/wiki/Ozymandias">Wikipedia</a>
+    </h4>
+    <textarea
+      placeholder="Leave your comments here
+..."
+    ></textarea>
+    <br /><br />
+    <button>Comment</button>
   </body>
 </html>
