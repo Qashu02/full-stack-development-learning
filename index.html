@@ -6,30 +6,52 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="server">
+    <h2>Feedback Form</h2>
+    <form action="Server">
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name" />
+      <input type="text" name="name" id="name" placeholder="Write your name " />
+      <br /><br />
       <div>
-        <label for="sex"> Sex:</label>
-        <label for="sex"> Male </label>
-        <input type="radio" name="sex" id="sex" /> 
-        <label for="sex">Female</label>
-        <input type="radio" name="sex" id="sex" />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email "
+          placeholder="Write your Email"
+        />
       </div>
+      <br />
       <div>
-        <label for="country">Select your Country:</label>
-        <select name="country" id="country">
-            <option value=>Select an option</option>
-        </select>
+        <label for="message">Message:</label>
+        <div>
+          <textarea name="message" id="message" cols="30" rows="4"></textarea>
+        </div>
       </div>
-      <div>
-    <label for="message">Message</label>
-    <div><textarea name="messs" id="message" rows="4" cols="30"></textarea></div>
-      </div>
-      <div>
-        <label for="subscribe">Subscribe?</label>
-        <input type="checkbox" name="sub" id="subscribe">
-      </div>
+      <br />
+
+      <label for="rating">Rate for us out of 5:</label>
+      <br />
+      <input type="radio" id="one" value="1" name="rating" />
+      <label for="one">1</label>
+      <br />
+
+      <input type="radio" id="two" value="2" name="rating" />
+      <label for="two">2</label>
+      <br />
+
+      <input type="radio" id="three" value="3" name="rating" />
+      <label for="three">3</label>
+      <br />
+
+      <input type="radio" id="four" value="4" name="rating" />
+      <label for="four">4</label>
+      <br />
+
+      <input type="radio" id="five" value="5" name="rating" />
+      <label for="five">5</label>
+      <br />
+      <br />
+      <br />
       <button>Submit</button>
     </form>
   </body>
