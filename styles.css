@@ -1,34 +1,23 @@
-*{
-    text-align: center;
+body{
+    margin: 0;
 
 }
-
-#main-topic{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: blue;
-}
-#main-topic::first-letter{
-    color: red;
-
-}
-.para{
-    color: white;
-    background-color: cornflowerblue;
-}
-p:nth-of-type(2n-1){
-    color: yellow;
-}
-div button{
-    color: azure;
-    background-color: purple;
+div{
+    text-align: end;
+background-color:rgb(31, 75, 31);
+padding: 3px 0;
 }
 
-button:hover{
-    color: blue;
-    background-color: yellow;
+.list{
+ display: inline;
+    padding: 2rem;
+    color: rgb(224, 224, 224);
+    text-decoration: wavy;
+    cursor: pointer;
+    opacity: 70%;
 }
+.list:hover{
 
-#yes:checked + label{
-
-    color: green;
+    color: white ;
+    
 }
