@@ -17,7 +17,7 @@ li{
     list-style-type: none;
 }
 .btn_one{
-    position: absolute;
+    position:absolute;
     left: 10px;
     font-size: 20px;
    line-height: 60px;
@@ -27,64 +27,80 @@ li{
 .sidebar_menu{
     height: 100vh;
     width: 250px;
-    position: fixed;
-    /* left: -350px; */
-    box-shadow: 0 0 6px rgba(255, 255, 255,0.5);
-    background-color: rgba(255, 255, 255,0.1);
-    display: flex;
-    flex-direction: column;
-  
-}
-
-
-.logo{
     position: absolute;
-    width: 100%;
-    border :rgba(255, 255, 255,0.5);
+    left: -350px;
     box-shadow: 0 0 6px rgba(255, 255, 255,0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: left ease-in-out 1s;
+    
+}
+
+
+.sidebar_menu .logo{
+ position: absolute;
+ width: 100%;
+
     line-height: 60px;
+    
 
 }
+
 .logo a{
 position: absolute;
 left: 50px;
 }
 .btn_two{
-display: inline;
+display: inline-block;
 position: absolute;
 left: 230px;
 line-height: 60px;
+color: gray;
 }
-.btn_one :hover{
+.btn_one
+ :hover{
+   
     transform: scale(1.1);
 }
-
+.btn_two:hover{
+  color: white;
+    transform: scale(1.1);
+}
 .menu{
+    
     margin: 38px 0;
 line-height: 60px;
 position: relative;
-left: 10px;
+padding-left: 5px;
+top:70px;
+display: block;
+width: 100%;
+box-sizing: border-box;
 }
+
 .menu li a{
     margin-left: 10px;
+ 
 }
 
 .menu i{
     color: rgba(255, 255, 255, 0.5);
 }
-.menu  :hover{
+.menu li:hover{
+    
     color: white;
-    box-shadow: 0 0 4px rgba(255, 255, 255,0.5);
+  
+    background-color:  rgba(255, 255, 255,0.1);
 }
 
 .social_media{
     text-align: center;
     position: relative;
  top: 70px;
+ word-spacing: 5px;
 }
 .social_media i{
     opacity: 0.5;
-    transition: transform 1s;
+    transition: transform 0.8s;
 }
 .social_media i:hover{
     transform: scale(1.1);
@@ -93,9 +109,10 @@ left: 10px;
 
 #check{
     display: none;
+  
+}
+#check:checked ~ .sidebar_menu{
+    left: 0;
+
 }
 
-
-#check :checked ~ .sidebar_menu{
-   left: 0;
-}
