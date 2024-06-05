@@ -1,14 +1,11 @@
-let name="qasim";
-console.log(name[0]);
-console.log(name[4]);
+let color=prompt("what is the color of light?");
+if(color==="red"){
+    alert("stop");
+}
+else if(color==="yellow"){
+    alert("start");
+}
 
-let s="apna"
-s=s+" college";
-console.log(s);
-console.log(s.length);
-// empty s length=0 
-let empty="";
-console.log(empty.length);
-
-let space=" ";
-console.log(space.length);
+else if(color==="green"){
+    alert("go");
+}
