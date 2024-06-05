@@ -1,6 +1,19 @@
-// last digit same number
-let num1=prompt("Enter First number: ");
-let num2=prompt("Enter second number: ");
-if (num1[num1.length-1] ===num2[num2.length-1]){
-    alert("Good number")
+// program to find the largest among three numbers
+
+// take input from the user
+const num1 = parseFloat(prompt("Enter first number: "));
+const num2 = parseFloat(prompt("Enter second number: "));
+const num3 = parseFloat(prompt("Enter third number: "));
+
+
+// check the condition
+if(num1 >= num2 && num1 >= num3) {
+ alert("First is largest")
 }
+else if (num2 >= num1 && num2 >= num3) {
+ alert("second is largest");
+}
+else {
+   alert("Third is largest");
+}
+
