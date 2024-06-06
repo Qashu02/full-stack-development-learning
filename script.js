@@ -1,3 +1,2 @@
-let msg="help";
-msg=msg.trim().toUpperCase();
-alert(msg);
+let msg="apnacollege";
+alert(msg.slice(4,9));
