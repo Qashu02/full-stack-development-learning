@@ -1,2 +1,7 @@
-let msg="apnacollege";
-alert(msg.slice(4).replace("l","t").replace("l","t"));
+let months=["january", "july","march ","august"];
+
+months.shift();
+months.shift();
+
+months.unshift("july");
+months.unshift("june");
