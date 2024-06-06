@@ -1,2 +1,2 @@
 let msg="apnacollege";
-alert(msg.indexOf("na"));
+alert(msg.replace("apna", "our"));
