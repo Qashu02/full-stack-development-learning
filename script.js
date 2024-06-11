@@ -1,4 +1,8 @@
-// . Write a JavaScript program to get the last n elements of an array.
-let num=[1,3,4,6];
-let n=3;
-alert(num.slice(1,4));
+// . Write a JavaScript program to check whether a string is blank or not.
+let str="";
+if(str===""){
+    alert("String is blank");
+}
+else{
+    alert("string is not blank")
+}
