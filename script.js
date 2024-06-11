@@ -1,8 +1,11 @@
-// . Write a JavaScript program to check whether a string is blank or not.
-let str="";
-if(str===""){
-    alert("String is blank");
+// Write a JavaScript program to test whether the character at the given (character) is lower case
+
+let chr="aRAb"
+let idx=2;
+
+if(chr[idx]==chr[idx].toLowerCase()){
+    alert("its lower case");
 }
 else{
-    alert("string is not blank")
+    alert("is not in lower case");
 }
