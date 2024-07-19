@@ -1,7 +1,2 @@
-try{
-    console.log(a);
-}
-catch(e){
-    console.log("a is not declared");
-    console.log(e);
-}
+let sqr= (n) => n*n;
+console.log(sqr(2));
