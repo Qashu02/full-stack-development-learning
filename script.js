@@ -1,8 +1,15 @@
-// checking element is multiple of 10 or not
-
-let arr=[10,240,204540,250]
-// every method used to check the all condition is full filled in an array if yes give true, same as AND operator and Some function is opposite to it 
-let ans=arr.every((el)=>{    
-    return el%10==0;
+// Square and sum the array elements using the arrow function and then find the average of the array.
+let arr=[12,4,42,44,6];
+//  map function used to map the array and create new array and store data of existing array after funtions
+let square=arr.map((el)=>
+{
+return el*el;
+})
+console.log(square);
+let sum= arr.reduce((res,el)=>{
+    return res+el;
 });
-console.log(ans)
+console.log(sum);
+
+ let avg= sum/arr.length;
+ console.log(avg);
