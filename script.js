@@ -1,11 +1,6 @@
-//  function that print hello world 5 times in 2 sec interval
+let arr=[23,34,53,5];
+arr.forEach(element => {
+    console.log(element)
+});
 
-let id=setInterval(function(){
-    console.log("Hello world")
-},2000);
-
-setTimeout(()=>{
-    
-    clearInterval(id);
-    console.log("5 Times completed")
-},10000);
+//  used to process individual elements of an array using to take call back function as an input 
