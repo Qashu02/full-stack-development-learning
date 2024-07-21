@@ -1,6 +1,7 @@
-let arr=[23,34,53,5];
+let arr=[{name:"qasim"},
+    {name:"ali"},
+    {name:"asad"},
+];
 arr.forEach(element => {
-    console.log(element)
+    console.log(element.name);
 });
-
-//  used to process individual elements of an array using to take call back function as an input 
