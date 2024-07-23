@@ -1,20 +1,27 @@
-// Random Rgb generator app 
-let btn=document.querySelector("button");
-let h3=document.querySelector("h3");
-let div=document.querySelector("div");
+let btn =document.querySelector("button");
+let ul=document.querySelector("ul");
+btn.addEventListener('click', function(){
+    let input=document.querySelector("input");
+   let item=document.createElement("li");
+   
+let del=document.createElement("button");
 
-Randomcolor=()=>{
-    let red=Math.floor(Math.random()*255);
-    let Green=Math.floor(Math.random()*255);
-    let blue=Math.floor(Math.random()*255);
-    let color=`rgb(${red} , ${Green}, ${blue})`;
-    return color;
-}
-btn.addEventListener('click',function(){
-    let random=Randomcolor();
-    h3.innerText=random;
-    h3.style.color=random;
-    div.style.backgroundColor=random;
+
+   item.innerText=input.value;
+del.innerText="Delete";
+del.classList.add("delete");
+item.append(del);
+
+
+   ul.appendChild(item);
+   input.value="";
+
 })
-
-  
+// event Delegation is used when bubbling is held to parent when triggered
+// bubling is the concept that if the event listener is addes to the parent then it will also bre on child 
+ul.addEventListener("click",function(event){
+    if(event.target.nodeName == "BUTTON"){
+        let lists=event.target.parentElement;
+        lists.remove()
+    }
+})
