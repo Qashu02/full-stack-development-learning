@@ -1,20 +1,20 @@
 let url ="https://catfact.ninja/fact";
 
-// api fetching  with help of promises
+// api fetching  with help of Async and await function 
 
-fetch(url)
-.then((res)=>{
- 
-  return res.json();
-}).then((data)=>{
-  console.log(data.fact);
-  return fetch(url)
-  .then((res)=>{
-    return res.json();
+async function GettingData(){
+  try{
 
-  }).then((data2)=>{
-    console.log(data2.fact);
-  })
-}).catch((fail)=>{
-  console.log("Error-",fail);
-})
+    let res1= await fetch(url);
+     let data1=await res1.json();
+     console.log(data1.fact);
+     let res2= await fetch(url);
+     let data2=await res2.json();
+     console.log(data2.fact);
+  }catch(e){
+    console.log("error",e);
+  }
+  
+}
+
+GettingData();
