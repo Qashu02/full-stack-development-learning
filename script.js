@@ -1,20 +1,23 @@
 let url ="https://catfact.ninja/fact";
 
-// api fetching  with help of Async and await function 
+// api fetching using axios 
+//  in promisies and async we have to parse the data to read it but its automatically converted to dats using axios 
+let btn=document.querySelector("button");
+let p=document.querySelector("p");
 
-async function GettingData(){
+async function GetFact(){
   try{
+    
+    let res=await axios.get(url);
+ btn.addEventListener('click',async function(){
+      p.innerText=res.data.fact;
 
-    let res1= await fetch(url);
-     let data1=await res1.json();
-     console.log(data1.fact);
-     let res2= await fetch(url);
-     let data2=await res2.json();
-     console.log(data2.fact);
-  }catch(e){
-    console.log("error",e);
-  }
+        })
   
+  }catch(e){
+    console.log("Error-",e);
+  }
 }
 
-GettingData();
+GetFact();
+
